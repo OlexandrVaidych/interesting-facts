@@ -1,15 +1,24 @@
+let fact;
 let count = 0;
 
-function showFact(){
-    let fact;
-    const facts = ["The driest place on Earth is in Antarctica",
-        "The tongue is the strongest muscle in the human body",
-        "Rubik's cube is the most sold product in the world"];
+const facts = {
+    1: "The driest place on Earth is in Antarctica",
+    2: "The tongue is the strongest muscle in the human body",
+    3: "Rubik's cube is the most sold product in the world"
+};
 
+const factsStr = JSON.stringify(facts);
+
+localStorage.setItem("facts", factsStr)
+
+const factObj = JSON.parse(localStorage.getItem("facts"));
+
+
+function showFact(){
     count++;
 
-    if(facts[count-1]){
-        fact = facts[count-1];
+    if(factObj[count]){
+        fact = factObj[count];
     }
     else{
         fact = "Facts ended";
