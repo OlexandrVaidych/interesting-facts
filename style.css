@@ -17,6 +17,10 @@ h2{
     margin-top: 50px;
 }
 
+.container p{
+    font-size: 20px;
+}
+
 .show{
     margin-top: 25px;
 }
