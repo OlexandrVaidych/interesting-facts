@@ -16,3 +16,21 @@ h2{
 .container {
     margin-top: 50px;
 }
+
+.show{
+    margin-top: 25px;
+}
+
+button {
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #ffc029;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #ffb200;
+    cursor: pointer;
+}
