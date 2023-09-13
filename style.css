@@ -34,3 +34,11 @@ button:hover {
     background-color: #ffb200;
     cursor: pointer;
 }
+
+.fact{
+    margin-top: 25px;
+}
+
+.fact p{
+    font-size: 18px;
+}
